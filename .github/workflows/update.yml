@@ -4,15 +4,15 @@ on:
   push:
     branches: [ main ]
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 10 * * *"
 jobs:
 
   build:
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      GIST_ID: 8c2cd8ea266a45c1aa9cb5f78d066b60
-      CATEGORY: a
+      GIST_ID: 2e1f9d2e577fb272df979f1c6c6a83c8
+      CATEGORY: ''
     steps:
     - uses: actions/checkout@v2
 
